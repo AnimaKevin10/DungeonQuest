@@ -1,3 +1,5 @@
+package dquest.jugador;
+
 public class Tesoro implements Comparable<Tesoro> {
     private String nombre;
     private int valor;

@@ -1,3 +1,6 @@
+package dquest.ui;
+import dquest.jugador.Jugador;
+
 public class VentanaInventario extends JFrame {
     private JList<String> listaTesoros;
     private DefaultListModel<String> modelo;
