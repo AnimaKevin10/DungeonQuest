@@ -1,6 +1,7 @@
+package dquest.estructuras.lineales;
 import java.util.ArrayList;
 import java.util.Random;
-
+import dquest.jugador.Tesoro;
 public class InventarioBST {
     private NodoTesoro raiz;
     private Random rand = new Random();

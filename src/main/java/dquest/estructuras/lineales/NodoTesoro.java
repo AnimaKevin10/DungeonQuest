@@ -1,3 +1,6 @@
+package dquest.estructuras.lineales;
+import dquest.jugador.Tesoro;
+
 public class NodoTesoro {
     Tesoro tesoro;
     NodoTesoro izquierdo;
