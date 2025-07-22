@@ -5,7 +5,7 @@ public class Jugador {
     private String nombre;
     private int posicionX;
     private int posicionY;
-    private InventarioBST inventario;
+    private InventarioBST inventario = new InventarioBST();
     public Jugador(String nombre) {
         this.nombre = nombre;
         this.posicionX = 0; // posición inicial por defecto

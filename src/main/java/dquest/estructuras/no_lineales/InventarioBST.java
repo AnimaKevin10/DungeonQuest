@@ -77,6 +77,16 @@ public class InventarioBST {
             inOrden(nodo.derecho, lista);
         }
     }
+    @Override
+    public String toString() {
+        ArrayList<Tesoro> tesoros = listarOrdenado();
+        if (tesoros.isEmpty()) return "(Vacío)";
+        StringBuilder sb = new StringBuilder();
+        for (Tesoro t : tesoros) {
+            sb.append("- ").append(t.getNombre());
+        }
+        return sb.toString();
+    }
 
     public boolean buscarConProbabilidad(String nombre) {
         Tesoro t = buscar(nombre);

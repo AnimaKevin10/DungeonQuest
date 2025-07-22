@@ -55,10 +55,6 @@ public class Juego {
         pasarTurno();
     }
 
-
-    /**
-     * Acción: robar inventario. Por ahora es solo un mensaje.
-     */
     public void robarJugador() {
         JOptionPane.showMessageDialog(null, getJugadorActual().getNombre() + " intenta robar...");
         // Aquí deberías mostrar la ventana de robo (de Persona 3)
