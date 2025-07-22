@@ -1,13 +1,16 @@
 package dquest.jugador;
+import dquest.estructuras.no_lineales.InventarioBST;
+
 public class Jugador {
     private String nombre;
     private int posicionX;
     private int posicionY;
-    // Luego se pone el hash inventory aqui
+    private InventarioBST inventario;
     public Jugador(String nombre) {
         this.nombre = nombre;
         this.posicionX = 0; // posición inicial por defecto
         this.posicionY = 0;
+        this.inventario = new InventarioBST();
     }
     //getters
     public String getNombre() {
@@ -31,8 +34,9 @@ public class Jugador {
         this.posicionX += deltaX;
         this.posicionY += deltaY;
     }
-
-    @Override
+    public InventarioBST getInventario() {
+        return inventario;}
+        @Override
     public String toString() {
         return "Jugador{" +
                 "nombre='" + nombre + '\'' +

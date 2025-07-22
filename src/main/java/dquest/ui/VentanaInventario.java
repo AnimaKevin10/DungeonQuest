@@ -1,5 +1,8 @@
 package dquest.ui;
 import dquest.jugador.Jugador;
+import dquest.jugador.Tesoro;
+
+import javax.swing.*;
 
 public class VentanaInventario extends JFrame {
     private JList<String> listaTesoros;

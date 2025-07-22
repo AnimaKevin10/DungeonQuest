@@ -1,4 +1,4 @@
-package dquest.estructuras.lineales;
+package dquest.estructuras.no_lineales;
 import dquest.jugador.Tesoro;
 
 public class NodoTesoro {

@@ -1,6 +1,7 @@
-package dquest.estructuras.lineales;
+package dquest.estructuras.no_lineales;
 import java.util.ArrayList;
 import java.util.Random;
+
 import dquest.jugador.Tesoro;
 public class InventarioBST {
     private NodoTesoro raiz;
