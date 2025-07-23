@@ -43,4 +43,21 @@ public class Jugador {
                 ", posición=(" + posicionX + ", " + posicionY + ")" +
                 '}';
     }
+    public class Jugador {
+    private String nombre;
+    private InventarioBST inventario = new InventarioBST();
+
+    public InventarioBST getInventario() { return inventario; }
+
+    public boolean intentarRobar(Jugador victima, String nombreTesoro) {
+        boolean exito = victima.getInventario().buscarConProbabilidad(nombreTesoro);
+        if (exito) {
+            Tesoro robado = victima.getInventario().buscar(nombreTesoro);
+            if (robado != null && victima.getInventario().eliminar(nombreTesoro)) {
+                this.inventario.insertar(robado);
+                return true;
+            }
+        }
+        return false;
+    }
 }
